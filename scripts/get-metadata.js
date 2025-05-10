@@ -10,7 +10,7 @@ dotenv.config();
 
 const ETH_NODE_URL = process.env.ETH_NODE_URL;
 const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
-const DATA_DIR = path.join(process.cwd(), 'data');
+const DATA_DIR = path.join(process.cwd(), 'public', 'data');
 const OUTPUT_FILE = path.join(DATA_DIR, "collection_metadata.json");
 
 // Validate required environment variables
@@ -49,7 +49,7 @@ async function findLastTokenId(client, contractAddress) {
       // If we can read this token, it exists
       lastValidId = mid;
       left = mid + 1n;
-    } catch (error) {
+    } catch (_error) {
       // If we can't read this token, it doesn't exist
       right = mid - 1n;
     }
@@ -65,7 +65,7 @@ async function findLastTokenId(client, contractAddress) {
     });
     // If we can read the next token, our binary search didn't find the last one
     console.log('Warning: Binary search might not have found the last token. Consider increasing the upper bound.');
-  } catch (error) {
+  } catch (_error) {
     // This is what we expect - the next token doesn't exist
   }
 
@@ -89,7 +89,7 @@ async function fetchAllMetadata(contractAddress) {
         functionName: 'totalSupply'
       });
       console.log('Successfully got totalSupply from contract');
-    } catch (error) {
+    } catch (_error) {
       console.log('Failed to get totalSupply, using binary search to find last token...');
       supply = await findLastTokenId(client, contractAddress);
       console.log(`Found last token ID: ${supply.toString()}`);
@@ -127,6 +127,11 @@ async function fetchAllMetadata(contractAddress) {
 
 (async () => {
   try {
+    // Ensure data directory exists
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
+    
     const metadata = await fetchAllMetadata(CONTRACT_ADDRESS);
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(metadata, null, 2));
     console.log(`\n✅ All metadata written to ${OUTPUT_FILE}`);

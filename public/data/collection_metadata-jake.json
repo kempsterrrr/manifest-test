@@ -1,0 +1,139 @@
+{
+  "1": {
+    "name": "Baby Eyes",
+    "created_by": "Jake Fried",
+    "description": "Baby Eyes by Jake Fried\n\nHand-drawn animation with ink and white-out. 5 second loop. Sound design by the artist.",
+    "attributes": [
+      {
+        "trait_type": "Artist",
+        "value": "Jake Fried"
+      }
+    ],
+    "animation_details": {
+      "bytes": 152451345,
+      "format": "MP4",
+      "duration": 60,
+      "sha256": "603e63417b66e3ec32d32fe53c8345c746218a08143df375f18b7909acad203b",
+      "width": 2000,
+      "height": 2000,
+      "codecs": [
+        "H.264",
+        "AAC"
+      ]
+    },
+    "animation": "https://arweave.net/dHJYLEx2Lcrl9wKdwzYh54npg6f3q14abTjIOy9l6VM",
+    "animation_url": "https://arweave.net/dHJYLEx2Lcrl9wKdwzYh54npg6f3q14abTjIOy9l6VM",
+    "image_details": {
+      "bytes": 56890887,
+      "format": "GIF",
+      "sha256": "80b200c08624b59438b82aee667d7300dfc6e7638264fc44da310538044c8066",
+      "width": 750,
+      "height": 750
+    },
+    "image": "https://arweave.net/GVs4Y3NeGVmEnoX3Luw2seQfaP3vKAA8vikdmk-RVTU",
+    "image_url": "https://arweave.net/GVs4Y3NeGVmEnoX3Luw2seQfaP3vKAA8vikdmk-RVTU"
+  },
+  "2": {
+    "name": "The Deep End",
+    "created_by": "Jake Fried",
+    "description": "The Deep End by Jake Fried\n\nHand-drawn animation with ink, white-out and coffee. 1 minute loop. Sound design by the artist.",
+    "attributes": [
+      {
+        "trait_type": "Artist",
+        "value": "Jake Fried"
+      }
+    ],
+    "animation_details": {
+      "bytes": 38944867,
+      "format": "MP4",
+      "duration": 60,
+      "sha256": "4927b1990df4c7f9b475df4175445d8a67f47120e8a6704a2488ca4a72d9cfc1",
+      "width": 1920,
+      "height": 1080,
+      "codecs": [
+        "H.264",
+        "AAC"
+      ]
+    },
+    "animation": "https://arweave.net/40OV5VEc8tgfQJzT00_ZQjE9ODxM4lpCHMsxcEHwsx0",
+    "animation_url": "https://arweave.net/40OV5VEc8tgfQJzT00_ZQjE9ODxM4lpCHMsxcEHwsx0",
+    "image_details": {
+      "bytes": 4454348,
+      "format": "PNG",
+      "sha256": "0fcb458abb902382bbba606ef524dc7328486633ab188463459c77e7e09efbce",
+      "width": 1500,
+      "height": 1500
+    },
+    "image": "https://arweave.net/saT7vH7T8DYD4ZwDYM0tEJaDwu57Fb_t7Njc-shobf8",
+    "image_url": "https://arweave.net/saT7vH7T8DYD4ZwDYM0tEJaDwu57Fb_t7Njc-shobf8"
+  },
+  "3": {
+    "name": "The Blank Page",
+    "created_by": "Jake Fried",
+    "description": "The Blank Page by Jake Fried\n\nHand-drawn animation with ink and white-out. 1 minute loop. Sound design by the artist.",
+    "attributes": [
+      {
+        "trait_type": "Artist",
+        "value": "Jake Fried"
+      }
+    ],
+    "animation_details": {
+      "bytes": 38971082,
+      "format": "MP4",
+      "duration": 60,
+      "sha256": "7f29c8de2f0489795f9867d4b80a71ddb89c49bdaa7d0b30810d17bb6026ac90",
+      "width": 1920,
+      "height": 1080,
+      "codecs": [
+        "H.264",
+        "AAC"
+      ]
+    },
+    "animation": "https://arweave.net/A_9YRtsRxWms0gq_KiEU1PXDdfosONoskZ1FHFlEuYA",
+    "animation_url": "https://arweave.net/A_9YRtsRxWms0gq_KiEU1PXDdfosONoskZ1FHFlEuYA",
+    "image_details": {
+      "bytes": 6189679,
+      "format": "PNG",
+      "sha256": "246d0084111635e227e1cdee0982cbb1ce7bc1096dac564fbc14e97a6c04e579",
+      "width": 2160,
+      "height": 2160
+    },
+    "image": "https://arweave.net/MS5wBEmWKYuKjHENdVgJzDH4m6icICiyyX3DIqdth0A",
+    "image_url": "https://arweave.net/MS5wBEmWKYuKjHENdVgJzDH4m6icICiyyX3DIqdth0A"
+  },
+  "4": {
+    "created_by": "Jake Fried",
+    "description": "Brain Wave by Jake Fried\n\nHand-drawn animation with ink and white-out. 1 minute loop. Sound design by the artist.",
+    "name": "Brain Wave",
+    "attributes": [
+      {
+        "trait_type": "Artist",
+        "value": "Jake Fried",
+        "display_type": "text"
+      }
+    ],
+    "animation_details": {
+      "bytes": 38858771,
+      "format": "MP4",
+      "duration": 60,
+      "sha256": "e806d40f1d3dafff97dfb45f75cae8b97f011dcc126849cc49fc9efbf005c389",
+      "width": 1920,
+      "height": 1080,
+      "codecs": [
+        "H.264",
+        "AAC"
+      ]
+    },
+    "animation": "https://arweave.net/SapUm0Z9f-VhRoDLGwq4DPn4r8IoKkDv1uwTrxHhk1Y",
+    "animation_url": "https://arweave.net/SapUm0Z9f-VhRoDLGwq4DPn4r8IoKkDv1uwTrxHhk1Y",
+    "image_details": {
+      "bytes": 4359252,
+      "format": "PNG",
+      "sha256": "a1d436e5958ba99f1f943ca0500b5ae4aae954080233b4c5e27edafb2310edef",
+      "width": 2160,
+      "height": 2160
+    },
+    "image": "https://arweave.net/_5ZTS4KN9cw6gM4Jweqd9gguDP5_7bppYFKi9zanPvA",
+    "image_url": "https://arweave.net/_5ZTS4KN9cw6gM4Jweqd9gguDP5_7bppYFKi9zanPvA"
+  }
+}

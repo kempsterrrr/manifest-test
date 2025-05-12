@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Gallery from './Gallery'
+import ImageDetail from './ImageDetail'
 
 function App() {
   const [metadata, setMetadata] = useState(null)
@@ -25,30 +27,19 @@ function App() {
     fetchMetadata()
   }, [])
 
-  if (loading) return <div>Loading...</div>
-  if (error) return <div>Error: {error}</div>
-  if (!metadata) return <div>No metadata found</div>
+  if (loading) return <div className="flex items-center justify-center min-h-screen text-xl bg-black text-white">Loading...</div>
+  if (error) return <div className="flex items-center justify-center min-h-screen text-xl text-red-500 bg-black">Error: {error}</div>
+  if (!metadata) return <div className="flex items-center justify-center min-h-screen text-xl bg-black text-white">No metadata found</div>
 
   return (
-    <div className="container">
-      <h1>NFT Collection Gallery</h1>
-      <div className="gallery">
-        {Object.entries(metadata).map(([tokenId, data]) => (
-          <div key={tokenId} className="nft-card">
-            <h2>Token #{tokenId}</h2>
-            <img 
-              src={data.image} 
-              alt={`NFT #${tokenId}`} 
-              className="nft-image"
-            />
-            <div className="nft-details">
-              <h3>{data.name}</h3>
-              <p>{data.description}</p>
-            </div>
-          </div>
-        ))}
+    <Router>
+      <div className="min-h-screen bg-black text-white">
+        <Routes>
+          <Route path="/" element={<Gallery metadata={metadata} />} />
+          <Route path="/detail/:tokenId" element={<ImageDetail />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   )
 }
 

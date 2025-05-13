@@ -10,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "deploy:undernames": "",
-    "deploy:arweave": "pnpm get-metadata && pnpm build && permaweb-deploy -d dist --arns-name $ARNS_NAME --deploy-key $DEPLOY_KEY"
+    "deploy:arweave": "pnpm build && permaweb-deploy -d dist --arns-name $ARNS_NAME --deploy-key $DEPLOY_KEY"
   },
   "dependencies": {
     "@ar.io/sdk": "3.11.0-alpha.7",

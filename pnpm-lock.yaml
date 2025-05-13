@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ar.io/sdk':
-        specifier: ^3.10.2
-        version: 3.10.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+        specifier: 3.11.0-alpha.7
+        version: 3.11.0-alpha.7(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       axios:
         specifier: ^1.9.0
         version: 1.9.0
@@ -20,6 +20,9 @@ importers:
       permaweb-deploy:
         specifier: ^2.0.2
         version: 2.0.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)
+      prop-types:
+        specifier: ^15.8.1
+        version: 15.8.1
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -85,6 +88,11 @@ packages:
 
   '@ar.io/sdk@3.10.2':
     resolution: {integrity: sha512-uBy3FkvlRM70godzkR6TBUzFd2Mk+OmY7DoEcdaX8bWPuFMsrD0qp/n5qXrm2BlMJCwHUQHEpOmhpAJ518G13A==}
+    engines: {node: '>=18'}
+    hasBin: true
+
+  '@ar.io/sdk@3.11.0-alpha.7':
+    resolution: {integrity: sha512-6K6G7Pg8xczYjpljfPmx7iKpMy+cUQ/2gc0xTWw/Zbofqo5dz5sZxyriSWFDYJN/BchQBpG76UnVrQgrvcp11A==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -2865,6 +2873,26 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.25
 
   '@ar.io/sdk@3.10.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+    dependencies:
+      '@dha-team/arbundles': 1.0.3(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@permaweb/aoconnect': 0.0.57
+      arweave: 1.15.5
+      axios: 1.8.4
+      axios-retry: 4.5.0(axios@1.8.4)
+      commander: 12.1.0
+      eventemitter3: 5.0.1
+      plimit-lit: 3.0.1
+      prompts: 2.4.2
+      winston: 3.17.0
+      zod: 3.24.4
+    transitivePeerDependencies:
+      - bufferutil
+      - debug
+      - encoding
+      - supports-color
+      - utf-8-validate
+
+  '@ar.io/sdk@3.11.0-alpha.7(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
       '@dha-team/arbundles': 1.0.3(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@permaweb/aoconnect': 0.0.57

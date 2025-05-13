@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { ArImage } from './ArImage.jsx'
 
 export default function Gallery({ metadata }) {
   const navigate = useNavigate()
@@ -15,8 +16,8 @@ export default function Gallery({ metadata }) {
             className="mb-4 break-inside-avoid rounded overflow-hidden bg-transparent cursor-pointer"
             onClick={() => navigate(`/detail/${tokenId}`)}
           >
-            <img
-              src={data.image}
+            <ArImage
+              src={data.image.replace(/https:\/\/arweave\.net\//g, 'ar://')}
               alt={`NFT #${tokenId}`}
               className="w-full h-auto object-cover rounded"
             />
